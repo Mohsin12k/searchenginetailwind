@@ -14,6 +14,7 @@ showHide.addEventListener('click', ()=>{
         bodyBlur.style.backdropFilter = 'none';
         inputSearch.style.transform = 'scale(0)';
         inputSearchBtn.style.transform = 'scale(0)';
+        inputSearch.value ='';
     } else{
     bodyBlur.style.backdropFilter = 'blur(12px)';
     inputSearch.style.transform = 'scale(1)';
