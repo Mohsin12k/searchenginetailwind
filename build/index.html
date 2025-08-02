@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Engine</title>
+    <link
+      rel="shortcut icon"
+      href="../img/searchEngineIcon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="main.js"></script>
+    <script
+      defer
+      src="https://kit.fontawesome.com/36314ca1f4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body
+    class="bodyBlur relative min-h-screen bg-[url('../img/snowNight.jpg')] bg-cover bg-center bg-no-repeat"
+  >
+    <header
+      class="group/h1 group/nav absolute flex w-full justify-between py-2 backdrop-blur-lg transition-all duration-200 ease-in-out hover:border-none hover:shadow-[0px_0px_20px_5px_gray] hover:outline-none hover:backdrop-blur-xl focus:border-none focus:shadow-[0px_0px_20px_5px_gray] focus:outline-none focus:backdrop-blur-xl"
+    >
+      <h1
+        class="group-hover/h1:textShadow px-2 text-3xl font-bold tracking-wider text-white transition-all duration-200 ease-in-out hover:border-none hover:outline-none focus:border-none focus:outline-none group-hover/h1:translate-x-6 group-hover/h1:scale-y-105 group-hover/h1:transform group-focus/h1:translate-x-6 group-focus/h1:scale-y-105 group-focus/h1:transform"
+      >
+        Search Engine
+      </h1>
+
+      <nav
+        class="text-md flex items-center justify-evenly space-x-8 px-2 font-semibold tracking-wider text-white transition-all duration-200 ease-in-out hover:border-none hover:outline-none focus:border-none focus:outline-none group-hover/nav:-translate-x-6 group-hover/nav:scale-y-105 group-hover/nav:transform group-focus/nav:-translate-x-6 group-focus/nav:scale-y-105 group-focus/nav:transform"
+      >
+        <a
+          href="#"
+          class="relative hidden transform transition-all duration-200 ease-out after:absolute after:block after:h-[2px] after:w-full after:origin-center after:scale-0 after:transform after:rounded after:bg-white after:transition-all after:duration-200 after:ease-out hover:scale-110 hover:border-none hover:outline-none hover:after:scale-100 hover:after:shadow-[0px_0px_20px_5px_lightgray] focus:scale-110 focus:border-none focus:outline-none focus:after:scale-100 focus:after:shadow-[0px_0px_20px_5px_lightgray] sm:block"
+        >
+          Home
+        </a>
+        <a
+          href="#"
+          class="relative hidden transform transition-all duration-200 ease-out after:absolute after:block after:h-[2px] after:w-full after:origin-center after:scale-0 after:transform after:rounded after:bg-white after:transition-all after:duration-200 after:ease-out hover:scale-110 hover:border-none hover:outline-none hover:after:scale-100 hover:after:shadow-[0px_0px_20px_5px_lightgray] focus:scale-110 focus:border-none focus:outline-none focus:after:scale-100 focus:after:shadow-[0px_0px_20px_5px_lightgray] sm:block"
+        >
+          About
+        </a>
+        <a
+          href="#"
+          class="relative hidden transform transition-all duration-200 ease-out after:absolute after:block after:h-[2px] after:w-full after:origin-center after:scale-0 after:transform after:rounded after:bg-white after:transition-all after:duration-200 after:ease-out hover:scale-110 hover:border-none hover:outline-none hover:after:scale-100 hover:after:shadow-[0px_0px_20px_5px_lightgray] focus:scale-110 focus:border-none focus:outline-none focus:after:scale-100 focus:after:shadow-[0px_0px_20px_5px_lightgray] sm:block"
+        >
+          Contact
+        </a>
+        <a
+          href="#"
+          class="relative hidden transform transition-all duration-200 ease-out after:absolute after:block after:h-[2px] after:w-full after:origin-center after:scale-0 after:transform after:rounded after:bg-white after:transition-all after:duration-200 after:ease-out hover:scale-110 hover:border-none hover:outline-none hover:after:scale-100 hover:after:shadow-[0px_0px_20px_5px_lightgray] focus:scale-110 focus:border-none focus:outline-none focus:after:scale-100 focus:after:shadow-[0px_0px_20px_5px_lightgray] sm:block"
+        >
+          Help
+        </a>
+
+        <button
+          class="showHide after:content-[' '] before:content-[' '] relative h-[40px] w-[40px] transform px-2 text-3xl transition-all duration-200 ease-out before:absolute before:left-0 before:hidden before:h-[4px] before:w-full before:-rotate-45 before:transform before:rounded before:bg-white after:absolute after:left-0 after:hidden after:h-[4px] after:w-full after:rotate-45 after:transform after:rounded after:bg-white hover:scale-110 hover:border-none hover:outline-none hover:before:animate-rotate-before hover:before:shadow-[0px_0px_20px_5px_lightgray] hover:after:animate-rotate-after hover:after:shadow-[0px_0px_20px_5px_lightgray] focus:scale-110 focus:border-none focus:outline-none focus:before:animate-rotate-before focus:before:shadow-[0px_0px_20px_5px_lightgray] focus:after:animate-rotate-after focus:after:shadow-[0px_0px_20px_5px_lightgray]"
+        >
+          <i
+            class="fa-solid fa-magnifying-glass hover:border-none hover:outline-none focus:border-none focus:outline-none"
+          ></i>
+        </button>
+      </nav>
+    </header>
+
+    <main class="flex min-h-screen w-full items-center justify-center">
+      <div class="showHid flex w-full items-center justify-center">
+        <input
+          type="text"
+          id="search"
+          placeholder="Search Anything"
+          autocomplete="off"
+          class="inputSearch peer/search z-10 w-[70%] origin-center scale-0 transform rounded-bl-lg rounded-tl-lg bg-white px-1 py-3 text-xl font-semibold text-[#333] transition-all duration-100 ease-in-out hover:border-none hover:shadow-[0px_0px_20px_5px_lightgray] hover:outline-none focus:border-none focus:shadow-[0px_0px_20px_5px_lightgray] focus:outline-none"
+        />
+
+        <button
+          class="inputSearchBtn flex w-[10%] origin-center -translate-x-1 scale-0 transform items-center justify-center rounded-br-lg rounded-tr-lg border-none bg-[rgb(255,255,255)] py-[0.66rem] outline-none transition-all duration-100 ease-in-out hover:border-none hover:outline-none focus:border-none focus:outline-none peer-hover/search:shadow-[0px_0px_20px_5px_lightgray] peer-focus/search:shadow-[0px_0px_20px_5px_lightgray]"
+        >
+          <i
+            class="fa-solid fa-magnifying-glass clickSearch text-3xl hover:scale-125 hover:transform hover:transition-all hover:duration-300 hover:ease-out focus:scale-125 focus:transform focus:transition-all focus:duration-300 focus:ease-out"
+          ></i>
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
